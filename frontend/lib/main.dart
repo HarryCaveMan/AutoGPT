@@ -38,7 +38,7 @@ void main() async {
     MultiProvider(
       providers: [
         Provider(
-          create: (context) => RestApiUtility("http://0.0.0.0:8000/ap/v1"),
+          create: (context) => RestApiUtility("http://127.0.0.1:8000/ap/v1"),
         ),
         Provider(
           create: (context) => SharedPreferencesService.instance,
