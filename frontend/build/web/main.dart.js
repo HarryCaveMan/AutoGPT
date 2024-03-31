@@ -49878,7 +49878,7 @@ return A.G(null,r)}})
 return A.H($async$CD,r)}}
 A.fI.prototype={
 yY(a){switch(a.a){case 0:return this.a
-case 1:return"http://0.0.0.0:8080/ap/v1"
+case 1:return"http://127.0.0.1:8080/ap/v1"
 case 2:return"https://leaderboard.agpt.co"
 default:return this.a}},
 t2(a,b){return this.a02(0,b)},
@@ -50086,7 +50086,7 @@ q.b=p==null?!0:p
 s=4
 return A.D(o.nt(0,"baseURL"),$async$nO)
 case 4:p=b
-if(p==null)p="http://0.0.0.0:8000/ap/v1"
+if(p==null)p="http://127.0.0.1:8000/ap/v1"
 q.c=p
 q.e.a=p
 s=5
@@ -50975,7 +50975,7 @@ $R:3,
 $S:468}
 A.a4n.prototype={
 $0(){var s=this.a.c
-s.scG(0,"http://0.0.0.0:8000/ap/v1")
+s.scG(0,"http://127.0.0.1:8000/ap/v1")
 this.b.xs(s.a.a)},
 $S:0}
 A.a4o.prototype={
