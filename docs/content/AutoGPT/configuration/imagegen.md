@@ -53,7 +53,7 @@ Further optional configuration:
 
 | Config variable | Values                  |                                  |
 | --------------- | ----------------------- | -------------------------------- |
-| `SD_WEBUI_URL`  | URL to your WebUI       | default: `http://127.0.0.1:7860` |
+| `SD_WEBUI_URL`  | URL to your WebUI       | default: `http://0.0.0.0:7860` |
 | `SD_WEBUI_AUTH` | `{username}:{password}` | *Note: do not copy the braces!*  |
 
 ## Selenium

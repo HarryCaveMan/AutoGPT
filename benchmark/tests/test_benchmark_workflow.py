@@ -1,8 +1,8 @@
 import pytest
 import requests
 
-URL_BENCHMARK = "http://localhost:8080/ap/v1"
-URL_AGENT = "http://localhost:8000/ap/v1"
+URL_BENCHMARK = "http://0.0.0.0:8080/ap/v1"
+URL_AGENT = "http://0.0.0.0:8000/ap/v1"
 
 import datetime
 import time

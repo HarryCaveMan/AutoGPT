@@ -114,7 +114,7 @@ class Config(SystemSettings, arbitrary_types_allowed=True):
     ##########
     memory_backend: str = UserConfigurable("json_file", from_env="MEMORY_BACKEND")
     memory_index: str = UserConfigurable("auto-gpt-memory", from_env="MEMORY_INDEX")
-    redis_host: str = UserConfigurable("localhost", from_env="REDIS_HOST")
+    redis_host: str = UserConfigurable("0.0.0.0", from_env="REDIS_HOST")
     redis_port: int = UserConfigurable(
         default=6379,
         from_env=lambda: int(v) if (v := os.getenv("REDIS_PORT")) else None,
@@ -168,7 +168,7 @@ class Config(SystemSettings, arbitrary_types_allowed=True):
         default="CompVis/stable-diffusion-v1-4", from_env="HUGGINGFACE_IMAGE_MODEL"
     )
     sd_webui_url: Optional[str] = UserConfigurable(
-        default="http://localhost:7860", from_env="SD_WEBUI_URL"
+        default="http://0.0.0.0:7860", from_env="SD_WEBUI_URL"
     )
     image_size: int = UserConfigurable(
         default=256,

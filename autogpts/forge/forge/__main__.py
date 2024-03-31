@@ -36,13 +36,13 @@ d88P     888  "Y88888  "Y888 "Y88P"   "Y8888P88 888           888
 if __name__ == "__main__":
     print(logo)
     port = os.getenv("PORT", 8000)
-    LOG.info(f"Agent server starting on http://localhost:{port}")
+    LOG.info(f"Agent server starting on http://0.0.0.0:{port}")
     load_dotenv()
     forge.sdk.forge_log.setup_logger()
 
     uvicorn.run(
         "forge.app:app",
-        host="localhost",
+        host="0.0.0.0",
         port=int(port),
         log_level="error",
         # Reload on changes to code or .env

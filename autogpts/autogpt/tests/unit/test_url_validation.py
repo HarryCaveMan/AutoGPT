@@ -37,8 +37,8 @@ def test_url_validation_fails_invalid_url(url, expected_error):
 
 
 local_file = (
-    ("file://localhost"),
-    ("file://localhost/home/reinier/secrets.txt"),
+    ("file://0.0.0.0"),
+    ("file://0.0.0.0/home/reinier/secrets.txt"),
     ("file:///home/reinier/secrets.txt"),
     ("file:///C:/Users/Reinier/secrets.txt"),
 )

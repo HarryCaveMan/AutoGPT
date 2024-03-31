@@ -204,7 +204,7 @@ jobs:
           CI: true
           PLAIN_OUTPUT: True
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          S3_ENDPOINT_URL: ${{ runner.os != 'Windows' && 'http://127.0.0.1:9000' || '' }}
+          S3_ENDPOINT_URL: ${{ runner.os != 'Windows' && 'http://0.0.0.0:9000' || '' }}
           AWS_ACCESS_KEY_ID: minioadmin
           AWS_SECRET_ACCESS_KEY: minioadmin
 

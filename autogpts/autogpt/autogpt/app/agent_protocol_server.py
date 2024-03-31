@@ -74,7 +74,7 @@ class AgentProtocolServer:
             return
 
         config = HypercornConfig()
-        config.bind = [f"localhost:{port}"]
+        config.bind = [f"0.0.0.0:{port}"]
         app = FastAPI(
             title="AutoGPT Server",
             description="Forked from AutoGPT Forge; "
@@ -83,7 +83,7 @@ class AgentProtocolServer:
         )
 
         # Configure CORS middleware
-        default_origins = [f"http://localhost:{port}"]  # Default only local access
+        default_origins = [f"http://0.0.0.0:{port}"]  # Default only local access
         configured_origins = [
             origin
             for origin in os.getenv("AP_SERVER_CORS_ALLOWED_ORIGINS", "").split(",")
@@ -126,7 +126,7 @@ class AgentProtocolServer:
         config.loglevel = "ERROR"
         config.bind = [f"0.0.0.0:{port}"]
 
-        logger.info(f"AutoGPT server starting on http://localhost:{port}")
+        logger.info(f"AutoGPT server starting on http://0.0.0.0:{port}")
         await hypercorn_serve(app, config)
 
     async def create_task(self, task_request: TaskRequestBody) -> Task:

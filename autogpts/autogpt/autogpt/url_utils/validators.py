@@ -86,7 +86,7 @@ def check_local_file_access(url: str) -> bool:
     # List of local file prefixes
     local_file_prefixes = [
         "file:///",
-        "file://localhost",
+        "file://0.0.0.0",
     ]
 
     return any(url.startswith(prefix) for prefix in local_file_prefixes)

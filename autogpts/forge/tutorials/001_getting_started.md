@@ -64,12 +64,12 @@ Begin by starting your agent using the command:
 ```bash
 ./run agent start YOUR_AGENT_NAME
 ```
-This will initiate the agent on `http://localhost:8000/`.
+This will initiate the agent on `http://0.0.0.0:8000/`.
 
 ![Start the Agent](../../../docs/content/imgs/quickstart/009_start_agent.png)
 
 ### Logging in and Sending Tasks to Your Agent
-Access the frontend at `http://localhost:8000/` and log in using a Google or GitHub account. Once you're logged you'll see the agent tasking interface! However... the agent won't do anything yet. We'll implement the logic for our agent to run tasks in the upcoming tutorial chapters. 
+Access the frontend at `http://0.0.0.0:8000/` and log in using a Google or GitHub account. Once you're logged you'll see the agent tasking interface! However... the agent won't do anything yet. We'll implement the logic for our agent to run tasks in the upcoming tutorial chapters. 
 
 ![Login](../../../docs/content/imgs/quickstart/010_login.png)
 ![Home](../../../docs/content/imgs/quickstart/011_home.png)
@@ -86,7 +86,7 @@ This command forcefully stops the agent. You can also restart it using the start
 - we connected the library with our personal github access token as part of the setup.
 - We've created and named our first agent, and entered it into the arena!
 - We've run the agent and it's tasking server successfully without an error.
-- We've logged into the server site at localhost:8000 using our github account.
+- We've logged into the server site at 0.0.0.0:8000 using our github account.
 
 Make sure you've completed every step successfully before moving on :). 
 ### Next Steps: Building and Enhancing Your Agent

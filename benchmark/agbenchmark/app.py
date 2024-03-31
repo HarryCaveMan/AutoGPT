@@ -118,10 +118,11 @@ class CreateReportRequest(BaseModel):
 updates_list = []
 
 origins = [
-    "http://localhost:8000",
-    "http://localhost:8080",
-    "http://127.0.0.1:5000",
-    "http://localhost:5000",
+    "http://0.0.0.0:8000",
+    "http://0.0.0.0:8080",
+    "http://0.0.0.0:5000",
+    "http://0.0.0.0:5000",
+    "*"
 ]
 
 
@@ -136,7 +137,7 @@ def setup_fastapi_app(agbenchmark_config: AgentBenchmarkConfig) -> FastAPI:
     from agbenchmark.main import run_benchmark
 
     configuration = Configuration(
-        host=agbenchmark_config.host or "http://localhost:8000"
+        host=agbenchmark_config.host or "http://0.0.0.0:8000"
     )
     app = FastAPI()
     app.add_middleware(

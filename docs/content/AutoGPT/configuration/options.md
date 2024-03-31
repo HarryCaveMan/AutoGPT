@@ -35,12 +35,12 @@ Configuration is controlled through the `Config` object. You can set configurati
 - `PLAIN_OUTPUT`: Plain output, which disables the spinner. Default: False
 - `PLUGINS_CONFIG_FILE`: Path of the Plugins Config file relative to the AutoGPT root directory. Default: plugins_config.yaml
 - `PROMPT_SETTINGS_FILE`: Location of the Prompt Settings file relative to the AutoGPT root directory. Default: prompt_settings.yaml
-- `REDIS_HOST`: Redis Host. Default: localhost
+- `REDIS_HOST`: Redis Host. Default: 0.0.0.0
 - `REDIS_PASSWORD`: Redis Password. Optional. Default:
 - `REDIS_PORT`: Redis Port. Default: 6379
 - `RESTRICT_TO_WORKSPACE`: The restrict file reading and writing to the workspace directory. Default: True
 - `SD_WEBUI_AUTH`: Stable Diffusion Web UI username:password pair. Optional.
-- `SD_WEBUI_URL`: Stable Diffusion Web UI URL. Default: http://localhost:7860
+- `SD_WEBUI_URL`: Stable Diffusion Web UI URL. Default: http://0.0.0.0:7860
 - `SHELL_ALLOWLIST`: List of shell commands that ARE allowed to be executed by AutoGPT. Only applies if `SHELL_COMMAND_CONTROL` is set to `allowlist`. Default: None
 - `SHELL_COMMAND_CONTROL`: Whether to use `allowlist` or `denylist` to determine what shell commands can be executed (Default: denylist)
 - `SHELL_DENYLIST`: List of shell commands that ARE NOT allowed to be executed by AutoGPT. Only applies if `SHELL_COMMAND_CONTROL` is set to `denylist`. Default: sudo,su

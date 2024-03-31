@@ -8,7 +8,7 @@ from vcr.request import Request
 
 HOSTNAMES_TO_CACHE: list[str] = [
     "api.openai.com",
-    "localhost:50337",
+    "0.0.0.0:50337",
     "duckduckgo.com",
 ]
 

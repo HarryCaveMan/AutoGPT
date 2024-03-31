@@ -15,4 +15,4 @@
 # npm install
 # npm run dev
 
-# localhost:3000
+# 0.0.0.0:3000

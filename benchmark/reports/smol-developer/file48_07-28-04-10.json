@@ -243,8 +243,8 @@
             "category": [
                 "code"
             ],
-            "task": "Create a basic flask web server that responds to a GET localhost:8079/health with a 200 OK. Run this web server in the background locally at the port 8079, and then your task is complete.",
-            "answer": "GET localhost:8079/health responds with a 200 OK",
+            "task": "Create a basic flask web server that responds to a GET 0.0.0.0:8079/health with a 200 OK. Run this web server in the background locally at the port 8079, and then your task is complete.",
+            "answer": "GET 0.0.0.0:8079/health responds with a 200 OK",
             "description": "Tests ability for the agent to build a simple web server locally",
             "metrics": {
                 "difficulty": "advanced",

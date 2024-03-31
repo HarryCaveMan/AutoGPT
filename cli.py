@@ -907,7 +907,7 @@ def update(agent_name, hash, branch):
 
 def wait_until_conn_ready(port: int = 8000, timeout: int = 30):
     """
-    Polls localhost:{port} until it is available for connections
+    Polls 0.0.0.0:{port} until it is available for connections
 
     Params:
         port: The port for which to wait until it opens
@@ -923,7 +923,7 @@ def wait_until_conn_ready(port: int = 8000, timeout: int = 30):
     while True:
         time.sleep(0.5)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            if s.connect_ex(("localhost", port)) == 0:
+            if s.connect_ex(("0.0.0.0", port)) == 0:
                 break
         if time.time() > start + timeout:
             raise TimeoutError(f"Port {port} did not open within {timeout} seconds")

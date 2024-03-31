@@ -152,8 +152,8 @@
         "TestCreateSimpleWebServer": {
             "data_path": "agbenchmark/challenges/code/d4_web_server",
             "is_regression": false,
-            "task": "Build a basic web server that responds to a GET localhost:8079/health with a 200 OK. Deploy this web server locally at the port 8079. ",
-            "answer": "GET localhost:8079/health responds with a 200 OK",
+            "task": "Build a basic web server that responds to a GET 0.0.0.0:8079/health with a 200 OK. Deploy this web server locally at the port 8079. ",
+            "answer": "GET 0.0.0.0:8079/health responds with a 200 OK",
             "description": "Tests ability for the agent to build a simple web server locally",
             "metrics": {
                 "difficulty": "advanced",

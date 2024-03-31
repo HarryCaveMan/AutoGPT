@@ -467,7 +467,7 @@ d88P     888  "Y88888  "Y888 "Y88P"   "Y8888P88 888           888
                                          "Y88P"                v0.1.0
 
 
-[2023-09-27 15:39:07,832] [forge.sdk.agent] [INFO]      📝  Agent server starting on http://localhost:8000
+[2023-09-27 15:39:07,832] [forge.sdk.agent] [INFO]      📝  Agent server starting on http://0.0.0.0:8000
 
 ```
 1. **Get Started**
