@@ -49311,7 +49311,7 @@ A.a9o.prototype={
 $1(a){return this.a.$2(a,this.b)},
 $S:317}
 A.aBQ.prototype={
-$1(a){return new A.fI("http://0.0.0.0:8000/ap/v1")},
+$1(a){return new A.fI("http://localhost:8000/ap/v1")},
 $S:337}
 A.aBR.prototype={
 $1(a){return $.aQa()},
